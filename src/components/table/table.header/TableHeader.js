@@ -1,6 +1,7 @@
 import React from 'react'
 import { IconContext } from 'react-icons'
 import { ImArrowUp, ImArrowDown } from 'react-icons/im'
+import './TableHeader.scss'
 
 const TableHeader = ({ headerGroups }) => {
     return (
@@ -14,8 +15,8 @@ const TableHeader = ({ headerGroups }) => {
                                     {column.render('Header')}
                                         {column.canSort ? 
                                             (column.isSortedDesc ? 
-                                                <button className="sort_button"><ImArrowDown size="11px" /></button> : 
-                                                <button className="sort_button"><ImArrowUp size="11px" /></button>) : ''
+                                                <button className="sort_button"><ImArrowDown className="arrow_icon" /></button> : 
+                                                <button className="sort_button"><ImArrowUp className="arrow_icon" /></button>) : ''
                                         }
                                     </span>
                                     {column.canFilter ? column.render('Filter') : null}

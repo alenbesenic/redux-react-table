@@ -1,0 +1,23 @@
+@import '../../../scss/variabels.scss';
+
+.table_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+
+    .table_body_row{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        border-bottom: 1px solid $border-color;
+        cursor: pointer;
+    }
+    
+    .table_body_cell{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

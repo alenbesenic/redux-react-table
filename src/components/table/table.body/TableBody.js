@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { getUser } from '../../redux/actions/user.actions/getUserAction'
-import TableModal from '../modal/TableModal'
+import { getUser } from '../../../redux/actions/user.actions/getUserAction'
+import TableModal from '../../modal/TableModal'
+import './TableBody.scss'
 
 const TableBody = ({ getTableBodyProps, page, prepareRow, pageIndex, pageSize, dispatch }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false)

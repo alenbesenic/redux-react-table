@@ -1,6 +1,7 @@
 import React from 'react'
 import { IconContext } from 'react-icons'
 import { FaFastBackward, FaFastForward } from 'react-icons/fa'
+import './TableFooter.scss'
 
 const TableFooter = ({ 
     pageIndex,  
@@ -16,7 +17,7 @@ const TableFooter = ({
 }) => {
     return (
         <IconContext.Provider value={{ size: "1.2em", color: 'white'}}>
-            <div className="table_info_container">
+            <div className="table_footer">
                 <div className="table_page_info">
                     <div className="page_number_info">
                         Page {' '}

@@ -1,0 +1,22 @@
+@import '../../../scss/variabels.scss';
+
+.modal_body{
+    height: 100%;
+    display: flex;
+    margin-top: 30px;
+    border-top: 1px solid $border-color;
+
+    .location{
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .user_body_info{
+        margin: 1.8em 0em;
+    }
+    
+    .contact{
+        width: 100%;
+        padding: 20px;
+    }
+}

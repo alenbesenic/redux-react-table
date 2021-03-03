@@ -1,10 +1,16 @@
+@import '../../scss/variabels.scss';
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(46, 43, 43);
-    color: #fff;
+    background-color: $color-dark-gray;
+    color: $color-white;
     padding: 0.8em;
+
+    .globe_icon{
+        width: 5em;
+    }
 }

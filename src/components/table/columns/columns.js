@@ -14,7 +14,8 @@ export const COLUMNS = [
                 Cell: ({value}) => { return(
                     <img 
                         src={value} 
-                        alt="user" 
+                        alt="user"
+                        className="user_image" 
                         style={{ 
                             borderRadius: '50%'
                         }}
