@@ -1,0 +1,90 @@
+.ReactModal__Content{
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1.1s ease-out;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    max-width: 100%;
+    border-radius: 50px !important;
+
+    .modal_inner{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .modal_header{
+            height: 100%;
+            display: flex;
+
+            .image_wrapper{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .user_image{
+                    border-radius: 5px;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .main_info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .user_main_info{
+                    margin: .5em;
+                }
+            }
+        }
+    }
+
+    .modal_body{
+        height: 100%;
+        display: flex;
+        margin-top: 30px;
+        border-top: 1px solid rgba(0, 0, 0, .5);
+
+        .location{
+            padding: 20px;
+            width: 100%;
+        }
+        
+        .user_body_info{
+            margin: 1.8em 0em;
+        }
+        
+        .contact{
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    .modal_footer{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .footer_button{
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        background-color: rgb(46, 43, 43);
+        color: white;
+        font-family: inherit;
+        font-size: 20px;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        bottom: 0;
+        position: absolute;
+    }
+}
